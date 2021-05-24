@@ -51,9 +51,9 @@
     <center>
         <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn fx:id="nameColumn" maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="Name" />
-                <TableColumn fx:id="downloadedColumn" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Downloaded" />
-                <TableColumn fx:id="quantityColumn" maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="Quantity" />
+            <TableColumn fx:id="uuidColumn" prefWidth="75.0" style="-fx-alignment: CENTER;" text="UUID" />
+                <TableColumn fx:id="nameColumn" maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" style="-fx-alignment: CENTER;" text="Name" />
+                <TableColumn fx:id="downloadedColumn" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" style="-fx-alignment: CENTER;" text="Downloaded" />
             </columns>
         </TableView>
     </center>
@@ -66,11 +66,12 @@
                 <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
             </padding>
          <children>
-            <Label fx:id="dirLbl" text="Directory: ">
+            <Label fx:id="dirLbl" text="Observed dir: ">
                <HBox.margin>
                   <Insets right="50.0" />
                </HBox.margin>
             </Label>
+            <Label fx:id="torrentDirLbl" text="Torrent dir: " />
             <Label fx:id="trackerUrlLbl" text="Tracker URL: ">
                <HBox.margin>
                   <Insets left="100.0" right="100.0" />
